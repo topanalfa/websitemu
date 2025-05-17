@@ -1,103 +1,70 @@
+import React from "react";
 import Image from "next/image";
+
+const PlaceholderIllustration: React.FC = () => (
+  <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="400" rx="40" fill="#F8F8FF"/>
+    <circle cx="200" cy="200" r="80" fill="#F3F3F3"/>
+    <rect x="170" y="120" width="60" height="160" rx="20" fill="#22223B"/>
+    <rect x="190" y="140" width="20" height="40" rx="5" fill="#F9DC5C"/>
+    <ellipse cx="200" cy="320" rx="40" ry="10" fill="#E0E0E0"/>
+    <rect x="120" y="180" width="40" height="10" rx="5" fill="#F9DC5C"/>
+    <rect x="240" y="180" width="40" height="10" rx="5" fill="#F9DC5C"/>
+    <rect x="180" y="220" width="40" height="10" rx="5" fill="#F9DC5C"/>
+  </svg>
+);
+
+const PlaceholderLogo: React.FC = () => (
+  <svg width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="70" height="24" rx="6" fill="#E0E0E0"/>
+    <text x="35" y="16" textAnchor="middle" fill="#B0B0B0" fontSize="14" fontFamily="Arial">LOGO</text>
+  </svg>
+);
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen flex flex-col font-sans bg-white">
+      {/* Header */}
+      <header className="flex items-center justify-between border-b border-black px-8 py-4">
+        <div className="text-2xl font-extrabold tracking-tight">Brutale</div>
+        <nav className="hidden md:flex gap-8 text-lg font-semibold">
+          <a href="#" className="hover:underline">HOME</a>
+          <a href="#" className="hover:underline">ABOUT ME</a>
+          <a href="#" className="hover:underline">PROCESS</a>
+          <a href="#" className="hover:underline">PORTFOLIO</a>
+          <a href="#" className="hover:underline">TESTIMONIALS</a>
+          <a href="#" className="hover:underline">FAQ</a>
+        </nav>
+        <button className="ml-4 border-2 border-black rounded-full px-6 py-2 font-bold text-base hover:bg-black hover:text-white transition">BUY THIS TEMPLATE</button>
+      </header>
+      {/* Main Hero Section */}
+      <main className="flex flex-1 flex-col md:flex-row items-center justify-between px-8 md:px-24 py-12 gap-8">
+        {/* Left: Text Content */}
+        <div className="flex-1 max-w-xl flex flex-col items-start justify-center gap-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-2">
+            <span className="block">MAKE AN IMPACT WITH</span>
+            <span className="block">YOUR HEADLINE</span>
+          </h1>
+          <p className="text-lg text-gray-700 mb-4">
+            Here's where you explain what makes your services unique. Share how you help clients overcome their challenges and achieve results they're excited about.
+          </p>
+          <button className="bg-[#A259FF] hover:bg-[#7C3AED] text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition mb-2">
+            LEARN MORE
+          </button>
+          <div className="text-sm text-gray-600 mt-2 mb-2">TRUSTED BY 40+ CLIENTS</div>
+          <div className="flex gap-4 opacity-60">
+            <PlaceholderLogo />
+            <PlaceholderLogo />
+            <PlaceholderLogo />
+            <PlaceholderLogo />
+            <PlaceholderLogo />
+          </div>
+        </div>
+        {/* Right: Illustration */}
+        <div className="flex-1 flex items-center justify-center">
+          <PlaceholderIllustration />
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
