@@ -26,8 +26,8 @@ export default function Home() {
     <div className="min-h-screen flex flex-col font-sans bg-white">
       {/* Header */}
       <header className="flex items-center justify-between border-b border-black px-8 py-4">
-        <div className="text-2xl font-extrabold tracking-tight">Brutale</div>
-        <nav className="hidden md:flex gap-8 text-lg font-semibold">
+        <div className="text-2xl font-extrabold tracking-tight text-[#1a237e]">Brutale</div>
+        <nav className="hidden md:flex gap-8 text-lg font-bold text-[#1a237e]">
           <a href="#" className="hover:underline">HOME</a>
           <a href="#" className="hover:underline">ABOUT ME</a>
           <a href="#" className="hover:underline">PROCESS</a>
@@ -35,7 +35,7 @@ export default function Home() {
           <a href="#" className="hover:underline">TESTIMONIALS</a>
           <a href="#" className="hover:underline">FAQ</a>
         </nav>
-        <button className="ml-4 border-2 border-black rounded-full px-6 py-2 font-bold text-base hover:bg-black hover:text-white transition">BUY THIS TEMPLATE</button>
+        <button className="ml-4 border-2 border-black rounded-full px-6 py-2 font-bold text-base text-[#1a237e] hover:bg-black hover:text-white transition">BUY THIS TEMPLATE</button>
       </header>
       {/* Main Hero Section */}
       <main className="flex flex-1 flex-col md:flex-row items-center justify-between px-8 md:px-24 py-12 gap-8">
