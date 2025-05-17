@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import SuccessStoriesSection from "./SuccessStoriesSection";
 
 const PlaceholderIllustration: React.FC = () => (
   <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,6 +66,7 @@ export default function Home() {
           <PlaceholderIllustration />
         </div>
       </main>
+      <SuccessStoriesSection />
     </div>
   );
 }
