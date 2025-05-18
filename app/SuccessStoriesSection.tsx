@@ -22,7 +22,7 @@ const caseStudies = [
 ];
 
 const SuccessStoriesSection: React.FC = () => (
-  <section className="w-full py-16 flex flex-col items-center bg-white">
+  <section id="testimonials" className="w-full py-16 flex flex-col items-center bg-white">
     <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight text-indigo-500">
       Your Client's Success Stories
     </h2>

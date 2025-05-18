@@ -28,7 +28,7 @@ const steps = [
 ];
 
 const ProcessStepsSection: React.FC = () => (
-  <section className="w-full py-16 flex flex-col items-center bg-white">
+  <section id="process" className="w-full py-16 flex flex-col items-center bg-white">
     <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight text-indigo-500">
       How We&apos;ll Work Together <span className="inline-block align-middle">&rarr;</span>
     </h2>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const MeetTheFounderSection: React.FC = () => (
-  <section className="w-full py-16 flex flex-col items-center bg-white">
+  <section id="about" className="w-full py-16 flex flex-col items-center bg-white">
     <div className="w-full flex flex-col md:flex-row items-center justify-center gap-12 px-4 md:px-0 max-w-6xl mx-auto">
       {/* Illustration */}
       <div className="flex-shrink-0 flex items-center justify-center w-full md:w-1/2 mb-8 md:mb-0">
