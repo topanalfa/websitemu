@@ -31,25 +31,24 @@ const PlaceholderLogo: React.FC = () => (
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-white">
+    <div className="min-h-screen flex flex-col font-sans bg-amber-100">
       {/* Header */}
       <HeaderSection />
       {/* Main Hero Section */}
-      <main className="flex flex-1 flex-col md:flex-row items-center justify-between px-8 md:px-24 py-12 gap-8">
+      <main className="flex flex-1 flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-8 md:px-24 py-8 sm:py-12 gap-8 md:gap-8">
         {/* Left: Text Content */}
-        <div className="flex-1 max-w-xl flex flex-col items-start justify-center gap-6">
-          <h1 className="text-5xl text-indigo-500 md:text-6xl font-extrabold leading-tight mb-2">
-            <span className="block">MAKE AN IMPACT WITH</span>
-            <span className="block">YOUR HEADLINE</span>
+        <div className="flex-1 max-w-xl flex flex-col items-center md:items-start justify-center gap-4 text-center md:text-left">
+          <h1 className="text-4xl sm:text-5xl text-lime-700 md:text-6xl font-extrabold leading-tight mb-2">
+            <span className="block">MULAI BUAT WEBSITEMU</span>
           </h1>
-          <p className="text-lg text-gray-700 mb-4">
-            Here's where you explain what makes your services unique. Share how you help clients overcome their challenges and achieve results they're excited about.
+          <p className="text-base sm:text-lg text-gray-700 mb-4">
+          Tanpa ribet. Tanpa coding. Kami sudah bantu banyak restoran, salon, & klinik tampil profesional + mudah dipesan online.
           </p>
-          <button className="bg-[#A259FF] hover:bg-[#7C3AED] text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition mb-2">
-            LEARN MORE
+          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition mb-2">
+          WhatsApp Kami Sekarang
           </button>
-          <div className="text-sm text-gray-600 mt-2 mb-2">TRUSTED BY 40+ CLIENTS</div>
-          <div className="flex gap-4 opacity-60">
+          <div className="text-sm text-gray-600 mt-2 mb-2">Dipercaya lebih dari 40+ CLIENTS</div>
+          <div className="flex gap-4 opacity-60 flex-wrap justify-center">
             <PlaceholderLogo />
             <PlaceholderLogo />
             <PlaceholderLogo />
@@ -58,7 +57,7 @@ export default function Home() {
           </div>
         </div>
         {/* Right: Illustration */}
-        <div className="flex-1 flex items-center justify-center">
+        <div className="flex-1 flex items-center justify-center mb-6 md:mb-0">
           <PlaceholderIllustration />
         </div>
       </main>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const MeetTheFounderSection: React.FC = () => (
-  <section id="about" className="w-full py-16 flex flex-col items-center bg-white">
+  <section id="about" className="w-full py-16 flex flex-col items-center bg-lime-100">
     <div className="w-full flex flex-col md:flex-row items-center justify-center gap-12 px-4 md:px-0 max-w-6xl mx-auto">
       {/* Illustration */}
       <div className="flex-shrink-0 flex items-center justify-center w-full md:w-1/2 mb-8 md:mb-0">
@@ -19,12 +19,12 @@ const MeetTheFounderSection: React.FC = () => (
       </div>
       {/* Text Content */}
       <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight text-indigo-500">Meet The Founder</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight text-lime-700">Meet The Founder</h2>
         <p className="text-lg text-gray-800 mb-8 max-w-xl">
           With 10 years of experience in the design industry, I have collaborated with top companies including BrandInc, STudo, and DBunch. My work has been honored with prestigious awards such as a Cannes Lion, D&AD Pencil, CSSDA, FWA, and Awwwards.
         </p>
-        <button className="bg-[#A259FF] hover:bg-[#7C3AED] text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition border-2 border-black">
-          BOOK A FREE CALL
+        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition border-2 border-black">
+          KONSULTASI SEKARANG
         </button>
       </div>
     </div>

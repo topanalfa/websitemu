@@ -29,9 +29,9 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="w-full py-16 flex flex-col items-center bg-white">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight text-indigo-500">
-        Questions & Answers
+    <section id="faq" className="w-full py-16 flex flex-col items-center bg-amber-100">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight text-lime-700">
+        Pertanyaan yang sering ditanyakan.
       </h2>
       <p className="text-lg text-gray-700 text-center mb-12 max-w-2xl">
         How Can I Help? Your Burning Questions Answered!
@@ -47,7 +47,7 @@ const FAQSection: React.FC = () => {
               onClick={() => toggle(idx)}
               aria-expanded={openIndex === idx}
             >
-              <span className="text-indigo-500">{faq.question}</span>
+              <span className="text-lime-700">{faq.question}</span>
               <svg
                 className={`w-6 h-6 ml-4 transition-transform duration-200 ${openIndex === idx ? 'rotate-180' : ''}`}
                 fill="none"

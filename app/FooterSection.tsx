@@ -10,7 +10,7 @@ const navLinks = [
 ];
 
 const FooterSection: React.FC = () => (
-  <footer className="w-full bg-black text-white pt-16 pb-6 px-4">
+  <footer className="w-full bg-green-900 text-white pt-16 pb-6 px-4">
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-end justify-between gap-8 md:gap-0">
       {/* Logo */}
       <div className="flex-1 flex justify-center md:justify-start mb-6 md:mb-0">
@@ -43,7 +43,7 @@ const FooterSection: React.FC = () => (
       </div>
     </div>
     <div className="mt-8 text-center text-sm text-gray-300">
-      © 2025. Templates For Carrd. All Rights Reserved
+      © 2025. Copyright Websitemu
     </div>
   </footer>
 );

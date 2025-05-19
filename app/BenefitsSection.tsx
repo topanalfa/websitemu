@@ -2,7 +2,7 @@ import React from "react";
 
 const benefits = [
   {
-    title: "This is a benefit",
+    title: "Landing Page Profesional",
     description:
       "Explain how this specific aspect of your service helps clients achieve better results. Connect it to their goals and pain points.",
     Illustration: () => (
@@ -14,7 +14,7 @@ const benefits = [
     ),
   },
   {
-    title: "No Contract",
+    title: "Sistem Reservasi via WhatsApp",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id viverra enim",
     Illustration: () => (
@@ -26,7 +26,31 @@ const benefits = [
     ),
   },
   {
-    title: "Save Money",
+    title: "Koneksi ke Google Maps & Review",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id viverra enim",
+    Illustration: () => (
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
+        <ellipse cx="60" cy="80" rx="32" ry="16" fill="#F8F8FF" />
+        <rect x="50" y="60" width="20" height="20" rx="6" fill="#A259FF" />
+        <circle cx="60" cy="70" r="8" fill="#7C3AED" />
+      </svg>
+    ),
+  },
+  {
+    title: "Tautan IG, GoFood, GrabFood & TikTok",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id viverra enim",
+    Illustration: () => (
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-4">
+        <ellipse cx="60" cy="80" rx="32" ry="16" fill="#F8F8FF" />
+        <rect x="50" y="60" width="20" height="20" rx="6" fill="#A259FF" />
+        <circle cx="60" cy="70" r="8" fill="#7C3AED" />
+      </svg>
+    ),
+  },
+  {
+    title: "Menu atau Price List Digital (interaktif)",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id viverra enim",
     Illustration: () => (
@@ -40,9 +64,9 @@ const benefits = [
 ];
 
 const BenefitsSection: React.FC = () => (
-  <section className="w-full py-16 flex flex-col items-center bg-white">
-    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight text-indigo-500">
-      The Unmatched Benefits of My Work
+  <section className="w-full py-16 flex flex-col items-center bg-lime-100">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight text-lime-700">
+    APA SAJA YANG KAMI BUATKAN?
     </h2>
     <p className="text-lg text-gray-700 text-center mb-12 max-w-2xl">
       List 3–4 key reasons clients should choose you. Focus on what makes your approach unique.
@@ -51,7 +75,7 @@ const BenefitsSection: React.FC = () => (
       {benefits.map((benefit, idx) => (
         <div
           key={idx}
-          className="flex flex-col items-center border-2 border-black rounded-2xl p-8 bg-white shadow-sm transition hover:shadow-lg text-center"
+          className="flex flex-col items-center border-2 border-black rounded-2xl p-8 bg-white shadow-sm transition hover:shadow-lg text-center text-lime-700"
         >
           <div className="mb-2">
             <benefit.Illustration />
@@ -63,8 +87,8 @@ const BenefitsSection: React.FC = () => (
         </div>
       ))}
     </div>
-    <button className="bg-[#A259FF] hover:bg-[#7C3AED] text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition border-2 border-black">
-      BOOK A FREE CALL
+    <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition border-2 border-black">
+      KONSULTASI SEKARANG
     </button>
   </section>
 );

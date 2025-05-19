@@ -28,9 +28,9 @@ const steps = [
 ];
 
 const ProcessStepsSection: React.FC = () => (
-  <section id="process" className="w-full py-16 flex flex-col items-center bg-white">
-    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight text-indigo-500">
-      How We&apos;ll Work Together <span className="inline-block align-middle">&rarr;</span>
+  <section id="process" className="w-full py-16 flex flex-col items-center bg-lime-100">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight text-lime-700">
+      Proses Pembuatan Websitemu <span className="inline-block align-middle">&rarr;</span>
     </h2>
     <p className="text-lg text-gray-700 text-center mb-12 max-w-2xl">
       Break down your workflow into clear steps so potential clients understand exactly what to expect when working with you.

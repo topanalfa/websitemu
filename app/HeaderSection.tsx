@@ -24,10 +24,10 @@ const HeaderSection: React.FC = () => {
   };
 
   return (
-    <header className="flex items-center justify-between border-b border-black px-8 py-4 relative bg-white z-20">
-      <div className="text-2xl font-extrabold tracking-tight text-indigo-800">BuatWebmu</div>
+    <header className="flex items-center justify-between border-b border-black px-8 py-4 relative bg-lime-700 z-20">
+      <div className="text-2xl font-extrabold tracking-tight text-amber-100">BuatWebmu</div>
       {/* Desktop Nav */}
-      <nav className="hidden md:flex gap-8 text-lg font-bold text-indigo-800">
+      <nav className="hidden md:flex gap-8 text-lg font-bold text-amber-100">
         {navLinks.map((link) => (
           <a
             key={link.label}
@@ -39,7 +39,7 @@ const HeaderSection: React.FC = () => {
           </a>
         ))}
       </nav>
-      <button className="ml-4 border-2 border-black rounded-full px-6 py-2 font-bold text-base text-[#1a237e] hover:bg-black hover:text-white transition hidden md:block">
+      <button className="ml-4 border-2 border-yellow-500 rounded-full px-6 py-2 font-bold text-base text-amber-100 hover:bg-amber-100 hover:text-lime-700 transition hidden md:block">
         Buat Sekarang
       </button>
       {/* Burger Icon for Mobile */}
@@ -65,7 +65,7 @@ const HeaderSection: React.FC = () => {
               {link.label}
             </a>
           ))}
-          <button className="mt-2 border-2 border-black rounded-full px-6 py-2 font-bold text-base text-[#1a237e] hover:bg-black hover:text-white transition">
+          <button className="mt-2 border-2 border-black rounded-full px-6 py-2 font-bold text-base text-[#1a237e] hover:bg-amber-100 hover:text-white transition">
             Buat Sekarang
           </button>
         </nav>
