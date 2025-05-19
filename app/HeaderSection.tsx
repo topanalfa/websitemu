@@ -39,7 +39,7 @@ const HeaderSection: React.FC = () => {
           </a>
         ))}
       </nav>
-      <button className="ml-4 border-2 border-yellow-500 rounded-full px-6 py-2 font-bold text-base text-amber-100 hover:bg-amber-100 hover:text-lime-700 transition hidden md:block">
+      <button className="ml-4 border-2 rounded-full px-6 py-2 font-bold text-base text-amber-100 bg-green-500 hover:bg-green-600 hover:text-lime-200 transition hidden md:block">
         Buat Sekarang
       </button>
       {/* Burger Icon for Mobile */}
@@ -54,18 +54,18 @@ const HeaderSection: React.FC = () => {
       </button>
       {/* Mobile Nav */}
       {menuOpen && (
-        <nav className="absolute top-full left-0 w-full bg-white border-b border-black flex flex-col items-center gap-6 py-6 md:hidden shadow-lg z-30 animate-fade-in">
+        <nav className="absolute top-full left-0 w-full bg-lime-700 border-b border-black flex flex-col items-center gap-6 py-6 md:hidden shadow-lg z-30 animate-fade-in">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="text-lg font-bold text-indigo-800 hover:underline"
+              className="text-lg font-bold text-amber-100 hover:underline"
               onClick={e => handleNavClick(e, link.href)}
             >
               {link.label}
             </a>
           ))}
-          <button className="mt-2 border-2 border-black rounded-full px-6 py-2 font-bold text-base text-[#1a237e] hover:bg-amber-100 hover:text-white transition">
+          <button className="mt-2 border-2 border-amber rounded-full px-6 py-2 font-bold text-base text-amber-100 bg-green-500 hover:bg-green-600 hover:text-lime-200 transition">
             Buat Sekarang
           </button>
         </nav>
