@@ -61,12 +61,12 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-16 flex flex-col items-center bg-linear-to-t from-amber-100 to-lime-100">
+    <section id="faq" className="w-full py-16 flex flex-col items-center bg-linear-to-t from-amber-100 to-lime-100">
       <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-4 tracking-tight text-lime-700">
       Pertanyaan yang sering ditanyakan.
       </h2>
       <p className="text-lg text-gray-700 text-center mb-12 max-w-2xl">
-        How Can I Help? Your Burning Questions Answered!
+        Masih ada pertanyaan dengan layanan kami, baca ini dulu.
       </p>
       <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
         {/* First column: 1-6 */}

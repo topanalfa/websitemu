@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         {/* Right: Illustration */}
         <div className="flex-1 flex items-center justify-center mb-6 md:mb-0">
-          <Image src="/image_ilustration.png" alt="bikin websitemu sekarang" width={800} height={800}/>
+          <Image src="/header-banner.svg" alt="bikin websitemu sekarang" width={800} height={800}/>
         </div>
       </main>
       <SuccessStoriesSection />
